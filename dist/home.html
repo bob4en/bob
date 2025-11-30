@@ -1,0 +1,1121 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Критичные стили -->
+    
+    <link rel="preload" href="css/async.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><style>@charset "UTF-8";*,::after,::before{margin:0;padding:0;box-sizing:border-box}a{text-decoration:none;color:inherit}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}button,input,select,textarea{border:none;outline:0}button{background:0 0;cursor:pointer}form{display:block}fieldset{margin:0;padding:0}input[type=number]{-moz-appearance:textfield;-webkit-appearance:none}::selection{background-color:transparent;color:inherit}img{max-width:100%;height:auto;display:block}body{font-family:sans-serif;font-size:1rem;line-height:1.5}body{background:0 0}iframe{border:none}a:focus,a:hover{outline:0}:root{--black:#2A2A2A;--white:white;--white-2:#e3e0e0;--blue:#102563;--blue-2:#0e42e1;--blue-400:#035398;--light-blue:#F3FAFF;--gray-200:#C3CBDF;--red:#E5241B;--red-2:#c41810}@font-face{font-family:Inter;src:url(fonts/Inter-Medium.woff2) format("woff2"),url(fonts/Inter-Medium.woff) format("woff");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url(fonts/Inter-Regular.woff2) format("woff2"),url(fonts/Inter-Regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url(fonts/Inter-SemiBold.woff2) format("woff2"),url(fonts/Inter-SemiBold.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}.size-52{font-size:3.25rem}@media (max-width:1240px){.size-52{font-size:2.25rem}}@media (max-width:991px){.size-52{font-size:1.75rem}}.size-40{font-size:2.5rem}@media (max-width:1240px){.size-40{font-size:2.125rem}}@media (max-width:991px){.size-40{font-size:1.75rem}}.size-28{font-size:1.75rem}@media (max-width:1240px){.size-28{font-size:1.5rem}}@media (max-width:991px){.size-28{font-size:1.25rem}}.size-24{font-size:1.5rem}@media (max-width:1240px){.size-24{font-size:1.25rem}}@media (max-width:991px){.size-24{font-size:1.25rem}}.size-16{font-size:1rem}@media (max-width:1240px){.size-16{font-size:.9375rem}}@media (max-width:991px){.size-16{font-size:.875rem}}.pt-60{padding-top:3.75rem}@media (max-width:1240px){.pt-60{padding-top:2.75rem}}@media (max-width:991px){.pt-60{padding-top:2rem}}.pr-60{padding-right:3.75rem}@media (max-width:1240px){.pr-60{padding-right:2.75rem}}@media (max-width:991px){.pr-60{padding-right:2rem}}.pb-60{padding-bottom:3.75rem}@media (max-width:1240px){.pb-60{padding-bottom:2.75rem}}@media (max-width:991px){.pb-60{padding-bottom:2rem}}.pl-60{padding-left:3.75rem}@media (max-width:1240px){.pl-60{padding-left:2.75rem}}@media (max-width:991px){.pl-60{padding-left:2rem}}.p-60{padding:3.75rem}@media (max-width:1240px){.p-60{padding:2.75rem}}@media (max-width:991px){.p-60{padding:2rem}}.pt-40{padding-top:2.5rem}@media (max-width:1240px){.pt-40{padding-top:2.1875rem}}@media (max-width:991px){.pt-40{padding-top:2rem}}.pr-40{padding-right:2.5rem}@media (max-width:1240px){.pr-40{padding-right:2.1875rem}}@media (max-width:991px){.pr-40{padding-right:2rem}}.pb-40{padding-bottom:2.5rem}@media (max-width:1240px){.pb-40{padding-bottom:2.1875rem}}@media (max-width:991px){.pb-40{padding-bottom:2rem}}.pl-40{padding-left:2.5rem}@media (max-width:1240px){.pl-40{padding-left:2.1875rem}}@media (max-width:991px){.pl-40{padding-left:2rem}}.p-40{padding:2.5rem}@media (max-width:1240px){.p-40{padding:2.1875rem}}@media (max-width:991px){.p-40{padding:2rem}}.pt-32{padding-top:2rem}@media (max-width:1240px){.pt-32{padding-top:1.5rem}}@media (max-width:991px){.pt-32{padding-top:1rem}}.pr-32{padding-right:2rem}@media (max-width:1240px){.pr-32{padding-right:1.5rem}}@media (max-width:991px){.pr-32{padding-right:1rem}}.pb-32{padding-bottom:2rem}@media (max-width:1240px){.pb-32{padding-bottom:1.5rem}}@media (max-width:991px){.pb-32{padding-bottom:1rem}}.pl-32{padding-left:2rem}@media (max-width:1240px){.pl-32{padding-left:1.5rem}}@media (max-width:991px){.pl-32{padding-left:1rem}}.p-32{padding:2rem}@media (max-width:1240px){.p-32{padding:1.5rem}}@media (max-width:991px){.p-32{padding:1rem}}.pt-20{padding-top:1.25rem}@media (max-width:1240px){.pt-20{padding-top:1.25rem}}@media (max-width:991px){.pt-20{padding-top:1.25rem}}.pr-20{padding-right:1.25rem}@media (max-width:1240px){.pr-20{padding-right:1.25rem}}@media (max-width:991px){.pr-20{padding-right:1.25rem}}.pb-20{padding-bottom:1.25rem}@media (max-width:1240px){.pb-20{padding-bottom:1.25rem}}@media (max-width:991px){.pb-20{padding-bottom:1.25rem}}.pl-20{padding-left:1.25rem}@media (max-width:1240px){.pl-20{padding-left:1.25rem}}@media (max-width:991px){.pl-20{padding-left:1.25rem}}.p-20{padding:1.25rem}@media (max-width:1240px){.p-20{padding:1.25rem}}@media (max-width:991px){.p-20{padding:1.25rem}}.pt-10{padding-top:.625rem}@media (max-width:1240px){.pt-10{padding-top:.5625rem}}@media (max-width:991px){.pt-10{padding-top:.5rem}}.pr-10{padding-right:.625rem}@media (max-width:1240px){.pr-10{padding-right:.5625rem}}@media (max-width:991px){.pr-10{padding-right:.5rem}}.pb-10{padding-bottom:.625rem}@media (max-width:1240px){.pb-10{padding-bottom:.5625rem}}@media (max-width:991px){.pb-10{padding-bottom:.5rem}}.pl-10{padding-left:.625rem}@media (max-width:1240px){.pl-10{padding-left:.5625rem}}@media (max-width:991px){.pl-10{padding-left:.5rem}}.p-10{padding:.625rem}@media (max-width:1240px){.p-10{padding:.5625rem}}@media (max-width:991px){.p-10{padding:.5rem}}.pt-4{padding-top:.25rem}@media (max-width:1240px){.pt-4{padding-top:.25rem}}@media (max-width:991px){.pt-4{padding-top:.25rem}}.pr-4{padding-right:.25rem}@media (max-width:1240px){.pr-4{padding-right:.25rem}}@media (max-width:991px){.pr-4{padding-right:.25rem}}.pb-4{padding-bottom:.25rem}@media (max-width:1240px){.pb-4{padding-bottom:.25rem}}@media (max-width:991px){.pb-4{padding-bottom:.25rem}}.pl-4{padding-left:.25rem}@media (max-width:1240px){.pl-4{padding-left:.25rem}}@media (max-width:991px){.pl-4{padding-left:.25rem}}.p-4{padding:.25rem}@media (max-width:1240px){.p-4{padding:.25rem}}@media (max-width:991px){.p-4{padding:.25rem}}.mt-60{margin-top:3.75rem}@media (max-width:1240px){.mt-60{margin-top:2.75rem}}@media (max-width:991px){.mt-60{margin-top:2rem}}.mr-60{margin-right:3.75rem}@media (max-width:1240px){.mr-60{margin-right:2.75rem}}@media (max-width:991px){.mr-60{margin-right:2rem}}.mb-60{margin-bottom:3.75rem}@media (max-width:1240px){.mb-60{margin-bottom:2.75rem}}@media (max-width:991px){.mb-60{margin-bottom:2rem}}.ml-60{margin-left:3.75rem}@media (max-width:1240px){.ml-60{margin-left:2.75rem}}@media (max-width:991px){.ml-60{margin-left:2rem}}.mt-40{margin-top:2.5rem}@media (max-width:1240px){.mt-40{margin-top:2.1875rem}}@media (max-width:991px){.mt-40{margin-top:2rem}}.mr-40{margin-right:2.5rem}@media (max-width:1240px){.mr-40{margin-right:2.1875rem}}@media (max-width:991px){.mr-40{margin-right:2rem}}.mb-40{margin-bottom:2.5rem}@media (max-width:1240px){.mb-40{margin-bottom:2.1875rem}}@media (max-width:991px){.mb-40{margin-bottom:2rem}}.ml-40{margin-left:2.5rem}@media (max-width:1240px){.ml-40{margin-left:2.1875rem}}@media (max-width:991px){.ml-40{margin-left:2rem}}.mt-32{margin-top:2rem}@media (max-width:1240px){.mt-32{margin-top:1.5rem}}@media (max-width:991px){.mt-32{margin-top:1rem}}.mr-32{margin-right:2rem}@media (max-width:1240px){.mr-32{margin-right:1.5rem}}@media (max-width:991px){.mr-32{margin-right:1rem}}.mb-32{margin-bottom:2rem}@media (max-width:1240px){.mb-32{margin-bottom:1.5rem}}@media (max-width:991px){.mb-32{margin-bottom:1rem}}.ml-32{margin-left:2rem}@media (max-width:1240px){.ml-32{margin-left:1.5rem}}@media (max-width:991px){.ml-32{margin-left:1rem}}.mt-20{margin-top:1.25rem}@media (max-width:1240px){.mt-20{margin-top:1.25rem}}@media (max-width:991px){.mt-20{margin-top:1.25rem}}.mr-20{margin-right:1.25rem}@media (max-width:1240px){.mr-20{margin-right:1.25rem}}@media (max-width:991px){.mr-20{margin-right:1.25rem}}.mb-20{margin-bottom:1.25rem}@media (max-width:1240px){.mb-20{margin-bottom:1.25rem}}@media (max-width:991px){.mb-20{margin-bottom:1.25rem}}.ml-20{margin-left:1.25rem}@media (max-width:1240px){.ml-20{margin-left:1.25rem}}@media (max-width:991px){.ml-20{margin-left:1.25rem}}.mt-10{margin-top:.625rem}@media (max-width:1240px){.mt-10{margin-top:.5625rem}}@media (max-width:991px){.mt-10{margin-top:.5rem}}.mr-10{margin-right:.625rem}@media (max-width:1240px){.mr-10{margin-right:.5625rem}}@media (max-width:991px){.mr-10{margin-right:.5rem}}.mb-10{margin-bottom:.625rem}@media (max-width:1240px){.mb-10{margin-bottom:.5625rem}}@media (max-width:991px){.mb-10{margin-bottom:.5rem}}.ml-10{margin-left:.625rem}@media (max-width:1240px){.ml-10{margin-left:.5625rem}}@media (max-width:991px){.ml-10{margin-left:.5rem}}.mt-4{margin-top:.25rem}@media (max-width:1240px){.mt-4{margin-top:.25rem}}@media (max-width:991px){.mt-4{margin-top:.25rem}}.mr-4{margin-right:.25rem}@media (max-width:1240px){.mr-4{margin-right:.25rem}}@media (max-width:991px){.mr-4{margin-right:.25rem}}.mb-4{margin-bottom:.25rem}@media (max-width:1240px){.mb-4{margin-bottom:.25rem}}@media (max-width:991px){.mb-4{margin-bottom:.25rem}}.ml-4{margin-left:.25rem}@media (max-width:1240px){.ml-4{margin-left:.25rem}}@media (max-width:991px){.ml-4{margin-left:.25rem}}.h-60{height:3.75rem}@media (max-width:1240px){.h-60{height:3.5rem}}@media (max-width:991px){.h-60{height:3rem}}.flex{display:flex}.inline-flex{display:inline-flex}.flex-column{flex-direction:column}.align-center{align-items:center}.align-start{align-items:flex-start}.align-end{align-items:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.w-full{width:100%}@media (min-width:991px){.hidden-desktop{display:none!important}}@media (max-width:991px){.hidden-mobile{display:none!important}}.color-blue{color:var(--blue)}.color-white{color:var(--white)}.fw-500{font-weight:500}.fw-600{font-weight:600}.l-h-1-3{line-height:1.3}.l-h-1-2{line-height:1.2}.hidden-title{display:none}.w-300{width:18.75rem}@media (max-width:767px){.w-300{width:100%}}.w-254{width:15.875rem}@media (max-width:767px){.w-254{width:100%}}body{font-family:Inter,sans-serif;font-size:1.125rem;line-height:1.4;color:var(--black);background-color:var(--white)}@media (max-width:991px){body{font-size:1rem}}h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:inherit}a{text-decoration:none;color:inherit;transition:all .25s linear}strong{font-weight:700}em{font-style:italic}picture{width:100%;height:100%;display:flex;align-items:center;justify-content:center}.container{width:100%;margin:0 auto;max-width:84.5rem;padding:0 1.625rem}.text-center{text-align:center}.text-left{text-align:left}.text-right{text-align:right}address{font-style:normal}section{padding:5rem 0}@media (max-width:991px){section{padding:2.5rem 0}}.l-h-1-2{line-height:1.2}.header{margin-bottom:2rem;z-index:6;background:var(--white);position:relative}@media (max-width:1279px){.header-logo{width:3.75rem}}.header-top{padding:1.1875rem 0}@media (max-width:1279px){.header-top{padding:.625rem 0 1.1875rem;background:var(--blue)}.header-top .social{display:none}}.header-event-phone-mobile{display:none}@media (max-width:1279px){.header-event-phone-mobile{background:var(--white);display:flex;align-items:center;justify-content:center;border-radius:50%;width:2.5rem;margin-right:1.25rem;height:2.5rem}}@media (max-width:767px){.header-event-phone-mobile{margin-right:.625rem}}.hamburger{display:none}@media (max-width:1279px){.hamburger{margin-left:1.25rem;display:flex;align-items:center;justify-content:center;flex-direction:column;width:2.5rem;height:2.5rem;background:var(--white);border-radius:.3125rem}}@media (max-width:767px){.hamburger{margin-left:.625rem}}.line{width:1.5rem;height:.125rem;background:var(--blue);margin:.125rem 0;border-radius:.25rem}.header-address{gap:2rem}@media (max-width:1279px){.header-address{display:none}}.social{gap:.5rem}.social-link{width:2rem;height:2rem}.header-event{gap:1.25rem}@media (max-width:1279px){.header-event{gap:.25rem}}.header-event__button{border:.0625rem solid var(--blue)}.header-event__button-icon{width:2.5rem;height:2.5rem}.header-event__button-text{padding:0 1rem 0 .5rem}@media (max-width:1279px){.header-event__button-text{display:none}}.button{height:3.125rem;border-radius:.625rem;padding:0 1.875rem;font-family:inherit;font-size:inherit}.button.h-72{height:4.5rem}@media (max-width:991px){.button.h-72{height:3.75rem}}.button.h-60{height:3.75rem}@media (max-width:991px){.button.h-60{height:3.25rem}}.header-flex{padding:1rem 2rem}.header-menu__items{gap:1.8125rem}@media (max-width:1350px){.header-menu__items{gap:1.25rem}}.header-menu__item{font-size:1rem;font-weight:500}.header-menu__item_dropdown{gap:.25rem}.section-start{padding-top:0}@media (max-width:991px){.section-start{padding-bottom:0}}.start-slide{height:37.5rem;background-size:cover;padding:3.125rem;display:block}@media (max-width:991px){.start-slide{padding:2.5rem 1.625rem;height:32.5rem}}.start-slide__content{color:var(--white);position:relative;max-width:45.0625rem}@media (max-width:991px){.start-slide__content p{font-size:1rem}}.mw-900{max-width:56.25rem}@media (max-width:1279px){.header-main{display:none}}@media (min-width:1279px){.close-mobile-menu,.contact-mobile,.menu-more,.social_mobile{display:none!important}}.start-container{position:relative}@media (max-width:991px){.start-container{margin:-2rem -1.625rem 0;background:var(--blue)}}.filter-cruise{background:var(--white);position:absolute;bottom:3.75rem;left:3.75rem;width:calc(100% - 7.5rem);padding:2rem;border-radius:1.25rem;z-index:1}@media (max-width:1279px){.filter-cruise{bottom:.625rem}}@media (max-width:991px){.filter-cruise{margin:-11.875rem 0 0;padding:2rem 1.625rem;position:relative;bottom:auto;left:auto;width:auto;border-radius:1.25rem 1.25rem 0 0}}.filter-cruise__head{display:flex;gap:2rem;align-items:center;margin-bottom:1.5rem}@media (max-width:1279px){.filter-cruise__head{flex-direction:column;gap:1.25rem;align-items:flex-start}}@media (max-width:991px){.filter-cruise__head{gap:1rem;margin-bottom:1rem}}.filter-cruise__radio{display:flex;gap:.75rem}@media (max-width:991px){.filter-cruise__radio{flex-flow:row wrap;gap:.5rem}}.filter-radio{position:relative}.filter-radio input:checked+.filter-radio__cruise{background:var(--blue);color:var(--white)}.filter-radio:hover .filter-radio__cruise{background:var(--gray-200)}.filter-radio__cruise{width:15.3125rem;height:2.5rem;transition:all .25s linear;background:#ededed;border-radius:.25rem;display:flex;align-items:center;justify-content:center;font-size:.875rem}@media (max-width:991px){.filter-radio__cruise{width:auto;height:2.375rem;padding:.3125rem .9375rem}}.filter-radio__cruise span{margin-right:.25rem}.filter-cruise__form{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem}@media (max-width:1279px){.filter-cruise__form{grid-template-columns:repeat(3,1fr)}}@media (max-width:991px){.filter-cruise__form{display:flex;flex-direction:column}}.filter-cruise__default{width:100%;display:flex;align-items:center;border:.0625rem solid var(--gray-200);border-radius:.5rem;height:3.25rem;padding:.625rem;transition:all .25s linear;cursor:pointer}.filter-cruise__default:hover{border:.0625rem solid var(--blue)}.filter-cruise__item{width:100%;overflow:hidden;font-size:.875rem}.filter-cruise__default-icon{flex-shrink:0;margin-right:.25rem;display:flex;align-items:center}.filter-cruise__default-icon svg{fill:#9c9c9c}.filter-cruise__default-arrow{flex-shrink:0;margin-left:.25rem;display:flex;align-items:center}.filter-cruise__default-arrow svg{fill:transparent;stroke:#9c9c9c}.filter-cruise__default-text{color:#9c9c9c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:calc(100% - 3.25rem)}.dop-menu{display:none}.blackout{position:fixed;top:0;left:0;width:100%;height:100%;z-index:4;background:rgba(0,0,0,.7);transition:all .25s linear;pointer-events:none;opacity:0}.header-menu__item_mobile{display:none}@media (max-width:1279px){.header-menu__item_mobile{display:flex}}.form-item{width:100%;margin-bottom:1.25rem}.input{height:3.125rem;display:flex;align-items:center;border:.0625rem solid #9c9c9c;transition:all .25s linear;font-family:inherit;border-radius:.5rem;padding:0 .9375rem;font-size:.875rem;font-weight:500;background:var(--white);width:100%;color:var(--black)}.input:hover{border:.0625rem solid #8a8787}.input::placeholder{transition:all .25s linear;color:#9c9c9c}.input:focus::placeholder{opacity:0}.input.error{border:.0625rem solid var(--red)}.input.error::placeholder{color:var(--red)}.textarea{resize:none;height:12.5rem;padding:.9375rem}.input-absolute{position:absolute;opacity:0;z-index:1;cursor:pointer;top:0;left:0;width:100%;height:100%}.agreed{display:flex;align-items:center}.agreed-icon{position:relative;flex-shrink:0;margin-right:.625rem}.agreed-icon .input-absolute.error+.agreed-icon-check{border:.0625rem solid var(--red)}.agreed-icon .input-absolute:checked+.agreed-icon-check .icon{opacity:1}.agreed-icon-check{border:.0625rem solid var(--white);display:flex;align-items:center;justify-content:center;width:1.5rem;border-radius:.3125rem;height:1.5rem}.agreed-icon-check .icon{width:.75rem;height:.75rem;fill:var(--white);opacity:0}.agreed-text{font-size:.875rem;font-weight:600}.agreed-text a{text-decoration:underline}
+/*# sourceMappingURL=critical.css.map */
+</style></head>
+<body>
+
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="flex align-center justify-between">
+                <a href="/" class="header-logo">
+                    <picture>
+                        <source srcset="images/logo-mobile.svg" media="(max-width: 1279px)">
+                        <img src="images/logo.svg" alt="" width="227" height="50">
+                    </picture>
+                </a>
+                <address class="header-address size-16 fw-500 flex">
+                    <div class="header-address__item">
+                        <a href="tel:89674416388" class="header-address__phone">8 (967) 441-63-88</a>
+                        <div class="header-address__value color-blue">Для туристов</div>
+                    </div>
+                    <div class="header-address__item">
+                        <a href="tel:88006000229" class="header-address__phone">8 (800) 600-02-29</a>
+                        <div class="header-address__value color-blue">Корпоративным клиентам</div>
+                    </div>
+                </address>
+                <div class="social flex">
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/icon/social-1.svg" alt="">
+                    </a>
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/icon/social-2.svg" alt="">
+                    </a>
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/icon/social-3.svg" alt="">
+                    </a>
+                </div>
+                <div class="header-event flex size-16 fw-500">
+                    <a href="tel:88006000229" class="header-event-phone-mobile">
+                        <svg class="icon"><use href="images/sprite.svg#icon-phone"></use></svg>
+                    </a>
+                    <a href="#" class="header-event__button flex align-center">
+                        <span class="header-event__button-icon flex align-center justify-center">
+                            <svg class="icon"><use href="images/sprite.svg#icon-basket"></use></svg>
+                        </span>
+                        <span class="header-event__button-text">Корзина</span>
+                    </a>
+                    <a href="#" class="header-event__button flex align-center">
+                        <span class="header-event__button-icon flex align-center justify-center">
+                            <svg class="icon"><use href="images/sprite.svg#icon-user"></use></svg>
+                        </span>
+                        <span class="header-event__button-text">Личный кабинет</span>
+                    </a>
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="header-flex flex align-center justify-between">
+                <button class="close-mobile-menu">
+                    <svg class="icon"><use href="images/sprite.svg#icon-close"></use></svg>
+                </button>
+                <nav class="header-menu">
+                    <ul class="header-menu__items flex align-center">
+                        <li class="header-menu__item header-menu__item_mobile">
+                            <a href="#" class="header-menu__item-link open-modal" data-modal="callback">
+                                Подобрать круиз
+                            </a>
+                        </li>
+                        <li class="header-menu__item header-menu__item_dropdown">
+                            <span class="flex align-center flex align-center header-menu__item-drop">
+                                Речной круиз
+                                <svg class="icon"><use href="images/sprite.svg#icon-arrow-down"></use></svg>
+                            </span>
+                            <div class="dop-menu">
+                                <div class="container">
+                                    <div class="dop-menu__container">
+                                        <div class="dop-menu__left">
+                                            <ul class="dop-list">
+                                                <li class="dop-list__item">
+                                                    <a href="#" class="fw-600 mb-4">Каталог теплоходов</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">По России</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">По Зарубежью</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="dop-list">
+                                                <li class="dop-list__item">
+                                                    <a href="#" class="fw-600 mb-4">Информация о круизах</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">По России</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">По Зарубежью</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="dop-list">
+                                                <li class="dop-list__item">
+                                                    <a href="#" class="fw-600 mb-4">Города и стоянки</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dop-menu__right">
+                                            <div class="dop-column">
+                                                <ul class="dop-list">
+                                                    <li class="dop-list__item">
+                                                        <a href="#" class="fw-600 mb-4">Круизы по России</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Москва-Казань</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Золотое кольцо</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">По Северным рекам</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">По Южным рекам</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Москва —  Санкт-Петербург</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Вокруг Москвы</a>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="link-arrow">
+                                                    Узнать подробнее
+                                                    <svg class="icon"><use href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                            <div class="dop-column">
+                                                <ul class="dop-list">
+                                                    <li class="dop-list__item">
+                                                        <a href="#" class="fw-600 mb-4">Круизы по Зарубежью</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Дунай</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Рейн</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Сена</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Меконг</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Янцзы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Нил</a>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="link-arrow">
+                                                    Узнать подробнее
+                                                    <svg class="icon"><use href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                            <div class="dop-column">
+                                                <ul class="dop-list">
+                                                    <li class="dop-list__item">
+                                                        <a href="#" class="fw-600 mb-4">Круизы по регионам</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Центральная Россия</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Поволжье</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Северо-Запад</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Урал и Сибирь</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Юг России</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Дальний Восток</a>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="link-arrow">
+                                                    Узнать подробнее
+                                                    <svg class="icon"><use href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                            <div class="dop-column">
+                                                <ul class="dop-list">
+                                                    <li class="dop-list__item">
+                                                        <a href="#" class="fw-600 mb-4">Речные прогулки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">По Москве-реке</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">По Неве</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Круизы выходного дня</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Вечерние прогулки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Праздничные рейсы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Корпоративные мероприятия</a>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="link-arrow">
+                                                    Узнать подробнее
+                                                    <svg class="icon"><use href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-menu__item header-menu__item_dropdown">
+                            <span class="flex align-center flex align-center header-menu__item-drop">
+                                Морские круизы
+                                <svg class="icon"><use href="images/sprite.svg#icon-arrow-down"></use></svg>
+                            </span>
+                        </li>
+                        <li class="header-menu__item header-menu__item_dropdown">
+                            <span class="flex align-center flex align-center header-menu__item-drop">
+                               Круизы 2026
+                                <svg class="icon"><use href="images/sprite.svg#icon-arrow-down"></use></svg>
+                            </span>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item-link">
+                                Акции и скидки
+                            </a>
+                        </li>
+                        <li class="header-menu__item header-menu__item_dropdown">
+                            <span class="flex align-center flex align-center header-menu__item-drop">
+                                Туристам
+                                <svg class="icon"><use href="images/sprite.svg#icon-arrow-down"></use></svg>
+                            </span>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item-link">
+                                Корпоративным клиентам
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="menu-more">
+                    <li class="menu-more__item">
+                        <a href="#" class="menu-more__link">Корзина</a>
+                    </li>
+                    <li class="menu-more__item">
+                        <a href="#" class="menu-more__link">Личный кабинет</a>
+                    </li>
+                </ul>
+                <div class="contact-mobile">
+                    <div class="header-address-item">
+                        <a href="tel:89674416388" class="header-address-phone">8 (967) 441-63-88</a>
+                        <div class="header-address-value">Для туристов</div>
+                    </div>
+                    <div class="header-address-item">
+                        <a href="tel:88006000229" class="header-address-phone">8 (800) 600-02-29</a>
+                        <div class="header-address-value">Корпоративным клиентам</div>
+                    </div>
+                    <div class="header-address-item">
+                        <a href="mailto:info@volga-flot.ru" class="header-mail">info@volga-flot.ru</a>
+                    </div>
+                </div>
+                <div class="social social_mobile flex">
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/social-4.svg" alt="">
+                    </a>
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/social-5.svg" alt="">
+                    </a>
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/social-6.svg" alt="">
+                    </a>
+                </div>
+                <button type="button" class="button button-white size-16 fw-500 open-modal header-button" data-modal="callback">Подобрать круиз</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="section-start">
+        <div class="container">
+            <div class="start-container">
+                <h1 class="hidden-title">Откройте Россию заново&nbsp;— круизы по&nbsp;Волге и&nbsp;России</h1>
+                <div class="start-slider swiper-container">
+                    <button type="button" class="swiper-arrow swiper-arrow_prev">
+                        <svg class="icon">
+                            <use href="images/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="start-slide" data-bg="images/slide-1.webp, images/slide-1.webp">
+                                <div class="start-slide__content">
+                                    <div class="start-title size-52 l-h-1-2 mb-32">Откройте Россию заново&nbsp;— круизы
+                                        по&nbsp;Волге и&nbsp;России
+                                    </div>
+                                    <p class="size-24">
+                                        Все&nbsp;лучшие круизы&nbsp;вы можете забронировать онлайн — по&nbsp;актуальным ценам
+                                        и&nbsp;с&nbsp;гарантией бронирования
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="start-slide" data-bg="images/slide-1.webp, images/slide-1.webp">
+                                <div class="start-slide__content">
+                                    <div class="start-title size-52 l-h-1-2 mb-32">Откройте Россию заново&nbsp;— круизы
+                                        по&nbsp;Волге и&nbsp;России
+                                    </div>
+                                    <p class="size-24">
+                                        Все&nbsp;лучшие круизы&nbsp;вы можете забронировать онлайн — по&nbsp;актуальным ценам
+                                        и&nbsp;с&nbsp;гарантией бронирования
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="swiper-arrow swiper-arrow_next">
+                        <svg class="icon">
+                            <use href="images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <form action="#" class="filter-cruise">
+                    <div class="filter-cruise__head">
+                        <div class="size-28 fw-600 l-h-1-2">Поиск круизов</div>
+                        <div class="filter-cruise__radio">
+                            <div class="filter-radio">
+                                <input type="radio" name="cruise" class="input-absolute" id="cruise-1" checked="" value="cruise-1">
+                                <label for="cruise-1" class="filter-radio__cruise"><span class="hidden-mobile">Речные круизы по </span><span class="hidden-desktop">Реки </span>  России</label>
+                            </div>
+                            <div class="filter-radio">
+                                <input type="radio" name="cruise" class="input-absolute" id="cruise-2" value="cruise-2">
+                                <label for="cruise-2" class="filter-radio__cruise"><span class="hidden-mobile">Речные круизы по зарубежью</span><span class="hidden-desktop">Реки и моря зарубежья</span></label>
+                            </div>
+                            <div class="filter-radio">
+                                <input type="radio" name="cruise" class="input-absolute" id="cruise-3" value="cruise-3">
+                                <label for="cruise-3" class="filter-radio__cruise">Морские <span class="hidden-mobile">круизы по зарубежью</span><span class="hidden-desktop">маршруты</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-cruise__form">
+                        <div class="filter-cruise__item">
+                            <div class="filter-cruise__default">
+                                <div class="filter-cruise__default-icon">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-filter-1"></use>
+                                    </svg>
+                                </div>
+                                <div class="filter-cruise__default-text">Дата отправления</div>
+                                <div class="filter-cruise__default-arrow">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-arrow-down"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cruise__item">
+                            <div class="filter-cruise__default">
+                                <div class="filter-cruise__default-icon">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-filter-2"></use>
+                                    </svg>
+                                </div>
+                                <div class="filter-cruise__default-text">Город отправления</div>
+                                <div class="filter-cruise__default-arrow">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-arrow-down"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cruise__item">
+                            <div class="filter-cruise__default">
+                                <div class="filter-cruise__default-icon">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-filter-3"></use>
+                                    </svg>
+                                </div>
+                                <div class="filter-cruise__default-text">Продолжительность</div>
+                                <div class="filter-cruise__default-arrow">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-arrow-down"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cruise__item">
+                            <div class="filter-cruise__default">
+                                <div class="filter-cruise__default-icon">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-filter-4"></use>
+                                    </svg>
+                                </div>
+                                <div class="filter-cruise__default-text">Популярные мартшруты</div>
+                                <div class="filter-cruise__default-arrow">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-arrow-down"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cruise__item">
+                            <div class="filter-cruise__default">
+                                <div class="filter-cruise__default-icon">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-filter-5"></use>
+                                    </svg>
+                                </div>
+                                <div class="filter-cruise__default-text">Теплоход</div>
+                                <div class="filter-cruise__default-arrow">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#icon-arrow-down"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cruise__item">
+                            <span class="button flex fw-500 align-center justify-center button-red">Найти круиз</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="fw-600 l-h-1-2 size-40 mb-60 mw-900">
+                Почему <span class="color-blue">Волга-Флот</span> — выбор тысяч путешественников
+            </h2>
+            <div class="cause-items">
+                <div class="cause-item">
+                    <div class="cause-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#2A2A2A"></circle>
+                            <circle cx="20" cy="5" r="5" fill="#C3CBDF"></circle>
+                            <circle cx="5" cy="20" r="5" fill="#C3CBDF"></circle>
+                            <circle cx="20" cy="20" r="5" fill="#C3CBDF"></circle>
+                        </svg>
+                    </div>
+                    <div class="cause-item__content">
+                        <h3 class="fw-600 l-h-1-2 size-28 mb-10">Масштаб и выбор</h3>
+                        <p>
+                            110&nbsp;теплоходов и&nbsp;сотни маршрутов&nbsp;— найдётся круиз под&nbsp;любой вкус и&nbsp;бюджет
+                        </p>
+                    </div>
+                </div>
+                <div class="cause-item">
+                    <div class="cause-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#C3CBDF"></circle>
+                            <circle cx="20" cy="5" r="5" fill="#2A2A2A"></circle>
+                            <circle cx="5" cy="20" r="5" fill="#C3CBDF"></circle>
+                            <circle cx="20" cy="20" r="5" fill="#C3CBDF"></circle>
+                        </svg>
+                    </div>
+                    <div class="cause-item__content">
+                        <h3 class="fw-600 l-h-1-2 size-28 mb-10">Безопасность под&nbsp;контролем</h3>
+                        <p>
+                            Каждый теплоход проходит обязательные проверки и&nbsp;оснащён современными спассредствами
+                        </p>
+                    </div>
+                </div>
+                <div class="cause-item cause-item_blue">
+                    <div class="cause-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#035398"></circle>
+                            <circle cx="20" cy="5" r="5" fill="#035398"></circle>
+                            <circle cx="5" cy="20" r="5" fill="white"></circle>
+                            <circle cx="20" cy="20" r="5" fill="#035398"></circle>
+                        </svg>
+                    </div>
+                    <div class="cause-item__content">
+                        <h3 class="fw-600 l-h-1-2 size-28 mb-10">Комфорт для всех</h3>
+                        <p>
+                            Каюты от&nbsp;«Стандарта» до&nbsp;«Люкса», разнообразное питание, внимательный сервис
+                        </p>
+                    </div>
+                </div>
+                <div class="cause-item">
+                    <div class="cause-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <circle cx="5" cy="5" r="5" fill="#C3CBDF"></circle>
+                            <circle cx="20" cy="5" r="5" fill="#C3CBDF"></circle>
+                            <circle cx="5" cy="20" r="5" fill="#C3CBDF"></circle>
+                            <circle cx="20" cy="20" r="5" fill="#2A2A2A"></circle>
+                        </svg>
+                    </div>
+                    <div class="cause-item__content">
+                        <h3 class="fw-600 l-h-1-2 size-28 mb-10">Впечатления каждый день</h3>
+                        <p>
+                            Экскурсии, семейные программы, анимация и&nbsp;вечерние развлечения на&nbsp;борту
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="fw-600 l-h-1-2 size-40 mb-60 mw-900">Популярные <span class="color-blue">круизы 2025 года</span>
+            </h2>
+            <div class="popular-items mb-32">
+                <a href="#" class="popular-item" data-bg="images/popular-1.webp, images/popular-1.webp">
+                    <div class="popular-item__content">
+                        <h3 class="size-28 fw-600 l-h-1-2 mb-20">Москва – Казань – Нижний Новгород</h3>
+                        <div class="size-28 fw-600 l-h-1-2 mb-10 color-blue">от 25 500₽</div>
+                        <span class="button flex fw-500 align-center justify-center button-red">Узнать подробнее</span>
+                    </div>
+                </a>
+                <a href="#" class="popular-item" data-bg="images/popular-2.webp, images/popular-2.webp">
+                    <div class="popular-item__content">
+                        <h3 class="size-28 fw-600 l-h-1-2 mb-20">Санкт-Петербург – Валаам – Кижи</h3>
+                        <div class="size-28 fw-600 l-h-1-2 mb-10 color-blue">от 28 500₽</div>
+                        <span class="button flex fw-500 align-center justify-center button-red">Узнать подробнее</span>
+                    </div>
+                </a>
+                <a href="#" class="popular-item" data-bg="images/popular-1.webp, images/popular-1.webp">
+                    <div class="popular-item__content">
+                        <h3 class="size-28 fw-600 l-h-1-2 mb-20">Астрахань – Волгоград – Саратов</h3>
+                        <div class="size-28 fw-600 l-h-1-2 mb-10 color-blue">от 22 000₽</div>
+                        <span class="button flex fw-500 align-center justify-center button-red">Узнать подробнее</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="button button-blue h-72 size-24 fw-500 flex align-center justify-center">Смотреть все
+                маршруты</a>
+        </div>
+    </section>
+    <section class="bg-gray">
+        <div class="container">
+            <a href="#" class="send-section">
+                <h2 class="size-40 fw-600 l-h-1-2"><span class="color-blue">Ближайшие отправления</span> теплоходов</h2>
+                <svg class="icon">
+                    <use href="images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="section-special">
+                <h2 class="size-40 fw-600 l-h-1-2 color-white mb-40">Спецпредложения для вас</h2>
+                <div class="special-items mb-32">
+                    <a href="#" class="special-item">
+                        <span class="special-item__icon">
+                             <svg class="icon"><use href="images/sprite.svg#icon-action-1"></use></svg>
+                        </span>
+                        <div class="size-24 fw-500 l-h-1-3">Раннее бронирование — скидка до 20%</div>
+                    </a>
+                    <a href="#" class="special-item">
+                        <span class="special-item__icon">
+                             <svg class="icon"><use href="images/sprite.svg#icon-action-2"></use></svg>
+                        </span>
+                        <div class="size-24 fw-500 l-h-1-3">Спецпредложения на&nbsp;отдельные рейсы</div>
+                    </a>
+                    <a href="#" class="special-item">
+                        <span class="special-item__icon">
+                             <svg class="icon"><use href="images/sprite.svg#icon-action-3"></use></svg>
+                        </span>
+                        <div class="size-24 fw-500 l-h-1-3">Детям до 14 лет — бесплатное путешествие</div>
+                    </a>
+                </div>
+                <a href="#" class="button button-white-border h-72 size-24 fw-500 flex align-center justify-center">Посмотреть все акции</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="flex align-center justify-between mb-60">
+                <h2 class="size-40 fw-600 l-h-1-2">Круизы <span class="color-blue">для каждого</span></h2>
+                <a href="#" class="button button-blue h-72 size-24 fw-500 flex align-center justify-center hidden-mobile">Посмотреть
+                    все маршруты</a>
+            </div>
+            <div class="cruise-catalog">
+                <div class="cruise-item" data-bg="images/cruise-1.webp, images/cruise-1.webp">
+                    <div class="cruise-item__content">
+                        <div>
+                            <h3 class="size-28 fw-600 l-h-1-2 color-blue mb-10">Классические маршруты</h3>
+                            <p>Самые популярные круизы по&nbsp;Волге и&nbsp;великим рекам России</p>
+                        </div>
+                        <a href="#" class="cruise-item__link">
+                            Посмотреть круизы
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cruise-item" data-bg="images/cruise-2.webp, images/cruise-2.webp">
+                    <div class="cruise-item__content">
+                        <div>
+                            <h3 class="size-28 fw-600 l-h-1-2 color-blue mb-10">Круизы выходного дня</h3>
+                            <p>2–3 дня на теплоходе, чтобы отвлечься от забот</p>
+                        </div>
+                        <a href="#" class="cruise-item__link">
+                            Посмотреть круизы
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cruise-item" data-bg="images/cruise-3.webp, images/cruise-3.webp">
+                    <div class="cruise-item__content">
+                        <div>
+                            <h3 class="size-28 fw-600 l-h-1-2 color-blue mb-10">Культурные и&nbsp;экскурсионные</h3>
+                            <p>Города Золотого кольца, исторические маршруты</p>
+                        </div>
+                        <a href="#" class="cruise-item__link">
+                            Посмотреть круизы
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cruise-item" data-bg="images/cruise-4.webp, images/cruise-4.webp">
+                    <div class="cruise-item__content">
+                        <div>
+                            <h3 class="size-28 fw-600 l-h-1-2 color-blue mb-10">Сезонные предложения</h3>
+                            <p>Специальные маршруты на&nbsp;праздники и&nbsp;лучшие сезоны года</p>
+                        </div>
+                        <a href="#" class="cruise-item__link">
+                            Посмотреть круизы
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="read-block color-white" data-bg="images/read-bg.webp, images/read-bg-m.webp">
+                <h2 class="size-40 fw-600 l-h-1-2 mb-32">Никогда не были в круизе?</h2>
+                <p class="size-24 l-h-1-3 mb-20">
+                    Мы подготовили гид для новичков: что включено, как выбрать каюту и чего ожидать
+                </p>
+                <a href="#" class="button button-red w-300 flex align-center justify-center">Читать гид</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="size-40 fw-600 l-h-1-2 mb-60">Новости и полезные материалы</h2>
+            <div class="tabs" id="tabs1">
+                <ul class="tabs__nav mb-40">
+                    <li class="tabs__tab" data-tab="tab1">Новости</li>
+                    <li class="tabs__tab" data-tab="tab2">Статьи и советы</li>
+                    <li class="tabs__tab" data-tab="tab3">Изменения расписания</li>
+                </ul>
+                <div class="tabs__content">
+                    <div id="tab1" class="tabs__panel active">
+                        <div class="news-items mb-40">
+                            <a href="#" class="news-item">
+                                <div class="news-item__pic mb-20">
+                                    
+<picture>
+  <source data-srcset="images/news-1.webp" type="image/webp">
+  <img data-src="images/news-1.jpg" alt="news-1" class="lazy-img" loading="lazy">
+</picture>
+                                </div>
+                                <h3 class="color-blue size-28 fw-600 l-h-1-2 mb-10">Открыто раннее бронирование
+                                    на&nbsp;2026&nbsp;год</h3>
+                                <p class="mb-20">Планируйте отдых заранее — лучшие каюты доступны уже сегодня</p>
+                                <span class="news-arrow">
+                                     <span class="link-arrow">
+                                        Подробнее
+                                        <svg class="icon"><use href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                    </span>
+                                </span>
+                            </a>
+                            <a href="#" class="news-item">
+                                <div class="news-item__pic mb-20">
+                                    
+<picture>
+  <source data-srcset="images/news-2.webp" type="image/webp">
+  <img data-src="images/news-2.jpg" alt="news-2" class="lazy-img" loading="lazy">
+</picture>
+                                </div>
+                                <h3 class="color-blue size-28 fw-600 l-h-1-2 mb-10">Наш флот пополнился современными
+                                    теплоходами</h3>
+                                <p class="mb-20">Новые суда обеспечат больше комфорта и&nbsp;расширят маршруты</p>
+                                <span class="news-arrow">
+                                     <span class="link-arrow">
+                                        Подробнее
+                                        <svg class="icon"><use href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                    </span>
+                                </span>
+                            </a>
+                            <a href="#" class="news-item">
+                                <div class="news-item__pic mb-20">
+                                    
+<picture>
+  <source data-srcset="images/news-3.webp" type="image/webp">
+  <img data-src="images/news-3.jpg" alt="news-3" class="lazy-img" loading="lazy">
+</picture>
+                                </div>
+                                <h3 class="color-blue size-28 fw-600 l-h-1-2 mb-10">Волга-Флот расширил маршруты
+                                    по&nbsp;Астрахани и&nbsp;Волгограду</h3>
+                                <p class="mb-20">Теперь больше вариантов для путешествий по южной части Волги</p>
+                                <span class="news-arrow">
+                                     <span class="link-arrow">
+                                        Подробнее
+                                        <svg class="icon"><use href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <a href="#" class="button button-blue-border h-60 fw-500 flex align-center justify-center w-254">Все
+                            новости</a>
+                    </div>
+                    <div id="tab2" class="tabs__panel">
+                        <p>Content for Tab 2</p>
+                    </div>
+                    <div id="tab3" class="tabs__panel">
+                        <p>Content for Tab 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray">
+        <div class="container">
+            <h2 class="size-40 fw-600 l-h-1-2 mb-60">Что говорят наши гости</h2>
+            <div class="review-items mb-40">
+                <div class="review-item">
+                    <div class="review-item__head mb-32 flex align-center justify-between">
+                        <div class="review-item__user size-24 fw-500">
+                            <div class="review-item__user-avatar">
+                                
+<picture>
+  <source data-srcset="images/avatar.webp" type="image/webp">
+  <img data-src="images/avatar.jpg" alt="avatar" class="lazy-img" loading="lazy">
+</picture>
+                            </div>
+                            Ирина, г. Казань
+                        </div>
+                        <div class="review-item__tag fw-500">Сезонный круиз</div>
+                    </div>
+                    <p>
+                        Первый круиз и&nbsp;сразу по&nbsp;Волге&nbsp;— и&nbsp;мы&nbsp;ни&nbsp;разу не&nbsp;пожалели. Очень удобно, что&nbsp;всё&nbsp;организовано:
+                        от&nbsp;трансфера до&nbsp;экскурсий. Каюта чистая и&nbsp;комфортная, персонал внимательный. Особенно
+                        понравилось, что&nbsp;можно было насладиться красотой рек&nbsp;и&nbsp;при&nbsp;этом каждый день открывать новые
+                        города. Мы&nbsp;уже&nbsp;планируем следующий маршрут.
+                    </p>
+                </div>
+                <div class="review-item">
+                    <div class="review-item__head mb-32 flex align-center justify-between">
+                        <div class="review-item__user size-24 fw-500">
+                            Татьяна, г. Москва
+                        </div>
+                        <div class="review-item__tag fw-500">Сезонный круиз</div>
+                    </div>
+                    <p>
+                        Это&nbsp;путешествие мы&nbsp;будем вспоминать всю&nbsp;жизнь. Маршрут Москва&nbsp;— Казань оказался удивительно
+                        насыщенным: каждый день новые города, экскурсии и&nbsp;впечатления. На&nbsp;борту было уютно, питание
+                        отличное, особенно понравились ужины с&nbsp;живой музыкой. Мы&nbsp;отдыхали всей семьёй, и&nbsp;даже дети нашли
+                        себе развлечения. Спасибо Волга-Флот за&nbsp;заботу и&nbsp;атмосферу настоящего отдыха.
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="button button-blue h-60 fw-500 flex align-center justify-center w-254">Больше отзывов</a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="size-40 fw-600 l-h-1-2 mb-60">Частые вопросы</h2>
+            <div class="faq-container">
+                <div class="faq-column accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Стоимость указана за человека или каюту?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Есть ли у вас какие-то скидки и акции?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Есть ли одноместные каюты?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Когда начинается посадка на борт?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-column accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Что включено в стоимость круиза?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Можно ли путешествовать с питомцами?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Возможна ли свободная прогулка не в составе экскурсии?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head size-24 fw-500">
+                            Что делать, если я не смогу поехать в круиз?
+                            <svg class="icon">
+                                <use href="images/sprite.svg#icon-arrow-down-2"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <div class="accordion__content-main">
+                                <p>Контент 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="question-container">
+                <div class="question-column color-white">
+                    <h2 class="size-40 fw-600 l-h-1-2 mb-32">Остались вопросы?</h2>
+                    <p class="size-24 l-h-1-3">
+                        Мы&nbsp;с&nbsp;радостью поможем&nbsp;— оставьте заявку, и&nbsp;наш&nbsp;специалист свяжется с&nbsp;вами
+                    </p>
+                </div>
+                <div class="question-column">
+                    <div class="form-item">
+                        <input type="text" class="input" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" class="input" placeholder="Ваш телефон">
+                    </div>
+                    <div class="form-item">
+                        <select>
+                            <option data-placeholder="true">Какой способ связи будет для&nbsp;вас&nbsp;комфортнее?</option>
+                            <option value="value1">По телефону</option>
+                            <option value="value2">Whatsapp</option>
+                            <option value="value3">Chat</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <textarea class="input textarea" placeholder="Ваш вопрос"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <div class="agreed">
+                            <div class="agreed-icon">
+                                <input type="checkbox" class="input-absolute" id="agreed">
+                                <span class="agreed-icon-check">
+                                      <svg class="icon">
+                                            <use href="images/sprite.svg#icon-check"></use>
+                                        </svg>
+                                </span>
+                            </div>
+                            <label for="agreed" class="agreed-text color-white">Я&nbsp;согласен(а) с <a href="#">политикой конфиденциальности</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="button button-red flex align-center justify-center fw-500 h-60 w-full">Отправить</button>
+                </div>
+                <div class="form-pic">
+                    
+<picture>
+  <source data-srcset="images/form-pic.webp" type="image/webp">
+  <img data-src="images/form-pic.jpg" alt="form-pic" class="lazy-img" loading="lazy">
+</picture>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-container flex align-start justify-between">
+            <div class="footer-main">
+                <a href="#" class="footer-logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <div class="footer-contact">
+                    <div class="footer-contact__item">
+                        <a href="tel:89674416388" class="footer-phone size-24 fw-500">8 (967) 441-63-88</a>
+                        <div class="footer-contact__label color-blue size-16 fw-500">Для туристов</div>
+                    </div>
+                    <div class="footer-contact__item">
+                        <a href="tel:88006000229" class="footer-phone  size-24 fw-500">8 (800) 600-02-29</a>
+                        <div class="footer-contact__label color-blue size-16 fw-500">Корпоративным клиентам</div>
+                    </div>
+                    <div class="footer-contact__item">
+                        <a href="mailto:info@volga-flot.ru" class="footer-email size-24 fw-500 l-h-1-2">info@volga-flot.ru</a>
+                    </div>
+                </div>
+                <div class="social flex">
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/icon/social-1.svg" alt="">
+                    </a>
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/icon/social-2.svg" alt="">
+                    </a>
+                    <a href="#" class="social-link flex align-center justify-center">
+                        <img src="images/icon/social-3.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="button button-red h-60 w-254 align-center justify-center fw-500 footer-button-mobile">Как приобрести круиз</a>
+            </div>
+            <nav class="footer-menu">
+                <ul class="footer-menu__items">
+                    <li class="footer-menu__item">
+                        <span class="footer-menu__head mb-20 flex size-24 l-h-1-3 fw-500">Туристам</span>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Памятка туриста</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Часто задаваемые вопросы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Акции и скидки</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Речные прогулки <br> из&nbsp;вашего города</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Как приобрести круиз</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Адреса речных вокзалов</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu__items">
+                    <li class="footer-menu__item">
+                        <span class="footer-menu__head mb-20 flex size-24 l-h-1-3 fw-500">О нас</span>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">О компании</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Новости</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Отзывы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Договор оферты и реквизиты</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="button button-red h-60 w-254 flex align-center justify-center fw-500 footer-pay-desktop">Оплата на сайте</a>
+            <a href="#" class="arrow-top">
+                <svg class="icon">
+                    <use href="images/sprite.svg#icon-arrow-top"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+<div class="modal" id="callback">
+    <div class="modal-content">
+        <button type="button" class="close-modal close-m">
+            <svg class="icon">
+                <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="size-28 fw-600 text-center mb-40">Оставьте заявку <br> на&nbsp;обратный звонок</h2>
+        <form action="#">
+            <div class="form-item">
+                <input type="text" class="input" placeholder="Ваше имя">
+            </div>
+            <div class="form-item">
+                <input type="tel" class="input" placeholder="Ваш телефон">
+            </div>
+            <div class="form-item">
+                <select>
+                    <option data-placeholder="true">Какой способ связи будет для&nbsp;вас&nbsp;комфортнее?</option>
+                    <option value="value1">По телефону</option>
+                    <option value="value2">Whatsapp</option>
+                    <option value="value3">Chat</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <div class="agreed">
+                    <div class="agreed-icon">
+                        <input type="checkbox" class="input-absolute" id="agreed2">
+                        <span class="agreed-icon-check">
+                              <svg class="icon">
+                                    <use href="images/sprite.svg#icon-check"></use>
+                                </svg>
+                        </span>
+                    </div>
+                    <label for="agreed2" class="agreed-text color-white">Я&nbsp;согласен(а) с&nbsp;политикой конфиденциальности</label>
+                </div>
+            </div>
+            <button type="submit" class="button button-red flex align-center justify-center fw-500 h-60 w-full">Отправить</button>
+        </form>
+    </div>
+</div>
+<div class="modal" id="callback-thanks">
+    <div class="modal-content">
+        <button type="button" class="close-modal close-m">
+            <svg class="icon">
+                <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="size-28 fw-600 text-center mb-20">Спасибо за заявку!</h2>
+        <p class="mb-20 text-center">
+            Мы&nbsp;получили вашу заявку и&nbsp;скоро свяжемся с&nbsp;вами. Обычно это&nbsp;занимает не&nbsp;более 15&nbsp;минут в&nbsp;рабочее время
+        </p>
+        <div class="flex justify-center">
+            <button type="button" class="button close-m button-red fw-500 flex align-center justify-center w-300">Хорошо</button>
+        </div>
+    </div>
+</div>
+<div class="blackout"></div>
+
+
+<script src="js/start.js" type="module"></script>
+
+<!-- Загружается после полной загрузки страницы -->
+<script src="js/main.js" type="module" defer=""></script>
+
+
+</body></html>
